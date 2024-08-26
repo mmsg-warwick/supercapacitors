@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v0.1.0
+_src_path: https://github.com/pybamm-team/pybamm-cookie.git
+backend: hatch
+branch: main
+email: Ferran.Brosa-Planella@warwick.ac.uk
+full_name: Ferran Brosa Planella
+license: BSD-3-Clause
+mypy: false
+org: mmsg-warwick
+platform: github
+project_name: supercapacitors
+project_short_description: A supercapacitors modelling project using PyBaMM
+project_slug: supercapacitors
+url: https://github.com/mmsg-warwick/supercapacitors
+vcs: false
