@@ -14,7 +14,7 @@ class VerbruggeLiu(pybamm.lithium_ion.BaseModel):
         The name of the model.
     """
 
-    def __init__(self, name="Single Particle Model"):
+    def __init__(self, name="Verbrugge & Liu model"):
         super().__init__({}, name)
         # pybamm.citations.register("Marquis2019")  # need to register the citation
         # `param` is a class containing all the relevant parameters and functions for
