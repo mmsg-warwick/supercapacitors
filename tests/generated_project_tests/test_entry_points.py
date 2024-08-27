@@ -1,8 +1,8 @@
-import pytest
-import supercapacitors
 import importlib.util
 import sys
 from pathlib import Path
+
+import supercapacitors
 
 
 def test_parameter_sets_entry_points():
