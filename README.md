@@ -1,13 +1,14 @@
-# supercapacitors
+# Supercapacitor models
 
-[![Actions Status][actions-badge]][actions-link]
-[![Documentation Status][rtd-badge]][rtd-link]
+[![Tests](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml/badge.svg?branch=main)](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml)
+
+<!-- [![Documentation Status][rtd-badge]][rtd-link]
 
 [![PyPI version][pypi-version]][pypi-link]
 [![Conda-Forge][conda-badge]][conda-link]
 [![PyPI platforms][pypi-platforms]][pypi-link]
 
-[![GitHub Discussions][github-discussions-badge]][github-discussions-link]
+[![GitHub Discussions][github-discussions-badge]][github-discussions-link] -->
 
 <!-- SPHINX-START -->
 
@@ -26,3 +27,84 @@
 [rtd-link]:                 https://supercapacitors.readthedocs.io/en/latest/?badge=latest
 
 <!-- prettier-ignore-end -->
+
+> [!WARNING]
+> This repository is still under development and is not yet ready for use.
+
+This repository contains supercapacitor models implemented in PyBaMM, mostly based on the article:
+> M.W. Verbrugge, P. Liu, Microstructural Analysis and Mathematical Modeling of Electric Double-Layer Supercapacitors, J. Electrochem. Soc. 152 (2005) D79. https://doi.org/10.1149/1.1878052.
+
+## 🚀 Installing the package
+The package is not yet available on PyPI so it needs to be installed from the source code. These instructions assume that you have a compatible Python version installed (between 3.9 and 3.12).
+
+### Linux and macOS
+First clone the repository, either from the command line or using a Git client:
+
+```bash
+git clone git@github.com:mmsg-warwick/supercapacitors.git
+```
+
+If you do not have nox installed, install it with
+
+```bash
+python3 -m pip install nox
+```
+
+Then, navigate to the repository you just cloned and run
+
+```bash
+nox -s dev
+```
+
+This will create a virtual environment called `venv` in your current directory and install the package in editable mode with all the development dependencies. To activate the virtual environment, run
+
+```bash
+source env/bin/activate
+```
+
+You can now run the examples in the `examples` directory.
+
+If needed, you can deactivate your virtual environment with
+
+```bash
+deactivate
+```
+
+### Windows
+First clone the repository, either from the command line or using a Git client:
+
+```bash
+git clone git@github.com:mmsg-warwick/supercapacitors.git
+```
+
+If you do not have nox installed, install it with
+
+```bash
+python3 -m pip install nox
+```
+
+Then, navigate to the repository you just cloned and run
+
+```bash
+nox -s dev
+```
+
+This will create a virtual environment called `venv` in your current directory and install the package in editable mode with all the development dependencies. To activate the virtual environment, run
+
+```bash
+venv\Scripts\activate.bat
+```
+if you are using Command Prompt, or
+```bash
+venv\Scripts\Activate.ps1
+```
+if you are using PowerShell.
+
+
+You can now run the examples in the `examples` directory.
+
+If needed, you can deactivate your virtual environment with
+
+```bash
+deactivate
+```
