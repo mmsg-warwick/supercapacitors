@@ -60,10 +60,13 @@ Changelog = "https://github.com/mmsg-warwick/supercapacitors/releases"
 
 [project.entry-points."parameter_sets"]
 Chen2020 = "supercapacitors.parameters.input.Chen2020:get_parameter_values"
+Verbrugge2005 = "supercapacitors.parameters.input.Verbrugge2005:get_parameter_values"
+Iamrod2024 = "supercapacitors.parameters.input.Iamrod2024:get_parameter_values"
 
 [project.entry-points."models"]
 SPM = "supercapacitors.models.input.SPM:SPM"
 BasicReservoir = "supercapacitors.models.input.BasicReservoir:BasicReservoir"
+VerbruggeLiu = "supercapacitors.models.input.VerbruggeLiu:VerbruggeLiu"
 
 [tool.hatch]
 envs.default.dependencies = [
