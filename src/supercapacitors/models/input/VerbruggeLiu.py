@@ -168,7 +168,7 @@ class VerbruggeLiu(pybamm.lithium_ion.BaseModel):
                 pybamm.div(sigma_eff_p * pybamm.grad(delta_phi_p))
                 + pybamm.div(sigma_eff_p * pybamm.grad(phi_e_p))
         )
-        a_j = pybamm.concatenation(a_j_n, a_j_s, a_j_p) 
+        a_j = pybamm.concatenation(a_j_n, a_j_s, a_j_p)
         i_e = - param.kappa_e(c_e, T) * tor * pybamm.grad(phi_e)
         # multiply by Lx**2 to improve conditioning
         self.algebraic[phi_e] = param.L_x**2 * (pybamm.div(i_e) + a_j)
