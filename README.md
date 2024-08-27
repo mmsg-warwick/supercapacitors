@@ -1,6 +1,7 @@
 # Supercapacitor models
 
-[![Actions Status][actions-badge]][actions-link]
+[![Tests](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml/badge.svg?branch=main)](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml)
+
 <!-- [![Documentation Status][rtd-badge]][rtd-link]
 
 [![PyPI version][pypi-version]][pypi-link]
@@ -27,7 +28,7 @@
 
 <!-- prettier-ignore-end -->
 
-> [!WARNING]  
+> [!WARNING]
 > This repository is still under development and is not yet ready for use.
 
 This repository contains supercapacitor models implemented in PyBaMM, mostly based on the article:
