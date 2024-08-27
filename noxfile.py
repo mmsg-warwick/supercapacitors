@@ -44,22 +44,18 @@ def install_and_run_tests(session, test_dir):
     session.install("-e", ".[dev]", silent=False)
     session.run("pytest", test_dir)
 
-@nox.session(name="generated-project-tests")
-def run_generated_project_tests(session):
-    """Run the tests for testing units inside generated project"""
-    install_and_run_tests(session, "tests/generated_project_tests")
-
-@nox.session(name="user-tests")
-def run_user_tests(session):
-    """Run user written tests"""
-    install_and_run_tests(session, "tests/user_tests")
+@nox.session(name="unit")
+def run_unit_tests(session):
+    """Run unit tests"""
+    install_and_run_tests(session, "tests/unit")
 
 @nox.session(name="coverage")
 def run_coverage(session):
     """Run the coverage tests and generate an XML report."""
-    session.posargs.append("--cov=src/supercapacitors")
-    session.posargs.append("--cov-report=xml")
-    run_user_tests(session)
+    session.install("setuptools", silent=False)
+    session.install("coverage", silent=False)
+    session.install("-e", ".[dev]", silent=False)
+    session.run("pytest", "--cov=src/supercapacitors", "--cov-report=xml", "tests/unit")
 
 @nox.session(name="dev")
 def set_dev(session):
