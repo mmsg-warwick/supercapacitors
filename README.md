@@ -1,7 +1,6 @@
 # Supercapacitor models
 
 [![Tests](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml/badge.svg?branch=main)](https://github.com/mmsg-warwick/supercapacitors/actions/workflows/periodic_tests.yml)
-
 <!-- [![Documentation Status][rtd-badge]][rtd-link]
 
 [![PyPI version][pypi-version]][pypi-link]
