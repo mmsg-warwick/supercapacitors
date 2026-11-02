@@ -10,9 +10,9 @@ import pybamm
 from supercapacitors.entry_point import Model, models, parameter_sets
 
 __all__ = [
-    "__version__",
-    "pybamm",
-    "parameter_sets",
     "Model",
+    "__version__",
     "models",
+    "parameter_sets",
+    "pybamm",
 ]
